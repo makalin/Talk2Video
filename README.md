@@ -16,6 +16,9 @@ Whether it's a story, presentation, tutorial, or visual script, Talk2Video liste
 - 🎞️ Compose and render final video with **FFmpeg** or **moviepy**
 - 🧾 Script memory: multi-step stories or presentations
 - 🎛️ Optional GUI and CLI versions
+- 🌍 **Multi-language support** (English, Spanish, French, German, Japanese, Turkish)
+- 🎨 Multiple scene styles (cinematic, documentary, commercial, educational, dramatic)
+- 🎭 Customizable voice parameters (speed, pitch)
 
 ---
 
@@ -41,7 +44,7 @@ git clone https://github.com/makalin/Talk2Video.git
 cd Talk2Video
 pip install -r requirements.txt
 # Optional: setup API keys in .env
-````
+```
 
 ---
 
@@ -60,6 +63,20 @@ python talk2video.py --mic
 # Speak: "Create a cyberpunk city intro with deep voice narration"
 ```
 
+### Multi-language Example
+
+```bash
+python examples/multilingual_scene.py
+# Generates the same scene in multiple languages
+```
+
+### Turkish Example
+
+```bash
+python examples/turkish_scene.py
+# Generates a scene with Turkish narration
+```
+
 ---
 
 ## 📦 API Keys Required
@@ -67,6 +84,7 @@ python talk2video.py --mic
 * `OPENAI_API_KEY` – for GPT logic
 * `ELEVENLABS_API_KEY` (or `GOOGLE_TTS_API_KEY`) – for voice
 * `RUNWAY_API_KEY` or `STABLE_DIFFUSION_HOST` – for visuals
+* `GOOGLE_APPLICATION_CREDENTIALS` – for Google TTS (optional)
 
 ---
 
@@ -80,13 +98,38 @@ Want to use your own models or APIs? Just replace:
 
 ---
 
+## 🌍 Supported Languages
+
+* 🇺🇸 English
+* 🇪🇸 Spanish
+* 🇫🇷 French
+* 🇩🇪 German
+* 🇯🇵 Japanese
+* 🇹🇷 Turkish
+
+Each language supports multiple voice providers and customizable parameters.
+
+---
+
+## 🎨 Scene Styles
+
+* Cinematic
+* Documentary
+* Commercial
+* Educational
+* Dramatic
+
+---
+
 ## 🧪 Roadmap
 
 * [ ] Scene transitions & camera effects
 * [ ] Avatar lip-sync support
-* [ ] Multi-language narration
+* [ ] Additional language support
 * [ ] Built-in storyboarding
 * [ ] Mobile app (React Native or Flutter)
+* [ ] Real-time voice input processing
+* [ ] Custom voice model training
 
 ---
 
@@ -99,4 +142,11 @@ MIT License — free to use, modify, and contribute.
 ## 🙌 Contribute
 
 Pull requests welcome!
-Let’s make storytelling with voice easy for everyone.
+Let's make storytelling with voice easy for everyone.
+
+---
+
+## 📚 Documentation
+
+* [English](README.md)
+* [Turkish](README.tr.md)
